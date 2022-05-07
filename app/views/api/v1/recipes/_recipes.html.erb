@@ -1,0 +1,13 @@
+<% recipes.each do |recipe| %>
+    <div style="background-color: red">
+       <p>title: <%= recipe.title %></p>
+       <p>cook_time: <%= recipe.cook_time %></p>
+       <p>prep_time: <%= recipe.prep_time %></p>
+       <p>ingredients: <%= recipe.ingredients %></p>
+       <p>ratings: <%= recipe.ratings %></p>
+       <p>cuisine: <%= recipe.cuisine %></p>
+       <p>category: <%= recipe.category.name %></p>
+       <p>author: <%= recipe.author.username %></p>
+       <img src=<%= recipe.image %> width="20%" height="20%">
+    </div>
+<% end %>

@@ -1,0 +1,7 @@
+<%= render "header" %>
+
+<%= form_with url: search_api_v1_recipes_path, method: :get do |form| %>
+  <%= form.label :es_query, "Search for reciepes for these ingredients: " %>
+  <%= form.text_field :es_query %>
+  <%= form.submit "Search" %>
+<% end %>

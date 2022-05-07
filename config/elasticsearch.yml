@@ -1,0 +1,10 @@
+development: &default
+  transport_options:
+    request:
+      timeout: 300
+test:
+  <<: *default
+staging:
+  <<: *default
+production:
+  <<: *default
